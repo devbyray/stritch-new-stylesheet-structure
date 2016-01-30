@@ -1,0 +1,40 @@
+/*---------------------------------*\
+  State Rules (is- and has- namespace)
+  - Rule
+  State based class need higher
+  specifity to override the
+  default states. !important is
+  allowed but should be avoided
+  where possible. Consider class
+  chaining before considering it.
+\*---------------------------------*/
+.is{
+	&-headernav-active.is-headernav-active{
+		background-image: linear-gradient(to right, $color-brand-4 80%, darken($color-brand-4, 8%));
+    color: $white;
+    &:hover{
+      background: darken($color-brand-4, 5%);
+    }
+	}
+  &-notlink{
+    cursor: default;
+  }
+  &-visible{
+    display: block;
+  }
+  &-hidden{
+    display: none;
+  }
+  &-tab-active.is-tab-active a{
+    background: $white;
+    border-top: solid 2px $color-brand-3;
+  }
+  &-fixed-sidebar.is-fixed-sidebar .pinsidebar{
+    fill: $white;
+  }
+}
+.has{
+  &-overlay{
+    position: relative;
+  }
+}

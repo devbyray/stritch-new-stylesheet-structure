@@ -1,0 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+*:focus{
+  outline-color: $color-brand-3;
+  outline-width: 2px;
+}

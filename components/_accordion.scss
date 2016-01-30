@@ -1,0 +1,28 @@
+/*-----------------------------------------*\
+  Accordion (.accordion)
+\*-----------------------------------------*/
+.accordion{
+  margin-bottom: 10px;
+  &__header{
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    border-bottom: solid thin darken($white, 10%);
+    background: $white;
+    font-weight: 300;
+    .accordion--settings &{
+      background: $theme-default-color;
+      color: $white;
+    }
+    &::after{
+      content: '+';
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+  }
+  &__content{
+    padding: 20px 10px;
+    background: $white;
+  }
+}

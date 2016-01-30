@@ -1,0 +1,19 @@
+// Theme Dark
+.t-dark{
+  .adminsidebar{
+    background: $theme-dark-color;
+  }
+  .adminmain a{
+    color: $theme-dark-color;
+  }
+  .button--panel{
+    background: $theme-dark-color;
+    border: solid thin $theme-dark-color;
+    &:hover{
+      background: darken($theme-dark-color, 5%);
+    }
+  }
+  .accordion--settings .accordion__header{
+    background: $theme-dark-color;
+  }
+}

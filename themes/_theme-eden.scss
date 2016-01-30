@@ -1,0 +1,19 @@
+// Theme Eden
+.t-eden{
+  .adminsidebar{
+    background: $theme-eden-color;
+  }
+  .adminmain a{
+    color: $theme-eden-color;
+  }
+  .button--panel{
+    background: $theme-eden-color;
+    border: solid thin $theme-eden-color;
+    &:hover{
+      background: darken($theme-eden-color, 5%);
+    }
+  }
+  .accordion--settings .accordion__header{
+    background: $theme-eden-color;
+  }
+}

@@ -1,0 +1,19 @@
+// Theme Royale
+.t-royale{
+  .adminsidebar{
+    background: $theme-royale-gradient;
+  }
+  .adminmain a{
+    color: $theme-royale-color;
+  }
+  .button--panel{
+    background: $theme-royale-color;
+    border: solid thin $theme-royale-color;
+    &:hover{
+      background: darken($theme-royale-color, 5%);
+    }
+  }
+  .accordion--settings .accordion__header{
+    background: $theme-royale-gradient;
+  }
+}

@@ -1,0 +1,50 @@
+/*---------------------------------*\
+  Notice (.notice)
+  - Modifiers
+    * notice--success
+    * notice--warning
+    * notice--info
+    * notice--danger
+    * notice--centered
+\*---------------------------------*/
+.notice{
+  padding: 10px;
+  &--success{
+    background: $color-success;
+    border: solid 2px darken($color-success, 10%);
+    color: darken($color-success, 60%);
+  }
+  &--warning{
+    background: $color-warning;
+    border: solid 2px darken($color-warning, 10%);
+    color: darken($color-warning, 60%);
+  }
+  &--info{
+    background: $color-info;
+    border: solid 2px darken($color-info, 10%);
+    color: darken($color-info, 60%);
+  }
+  &--danger{
+    background: $color-error;
+    border: solid 2px darken($color-error, 10%);
+    color: darken($color-error, 60%);
+  }
+  &--auth{
+    background: darken($color-error, 30%);
+    box-shadow: 0 0 2px #aaa;
+    color: #eee;
+  }
+  &--centered{
+    text-align: center;
+  }
+  &:empty{
+    display: none;
+  }
+  h3, p{
+    margin: 0;
+  }
+  h3{
+    font-size: 2.5rem;
+    font-weight: lighter;
+  }
+}

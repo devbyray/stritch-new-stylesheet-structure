@@ -1,0 +1,7 @@
+.menu-wrap{
+  position: relative;
+  max-height: 40px;
+  @include breakpoint($breakpoint-max){
+    max-height: auto;
+  }
+}

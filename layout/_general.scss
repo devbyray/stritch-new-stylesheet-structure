@@ -1,0 +1,15 @@
+wrap{
+  width: 100%;
+  max-width: $site-width;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.content{
+  &--plain{
+    background-color: $white;
+    padding: 10px;
+  }
+}
+.template{
+  display: none;
+}

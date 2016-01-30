@@ -1,0 +1,16 @@
+.auth{
+  @include breakpoint($breakpoint-tablet-portrait){
+    @include clearfixable;
+    .form{
+      float: left;
+      width: 50%;
+      padding: 0 5px;
+    }
+  }
+  &--single{
+    .form{
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+}

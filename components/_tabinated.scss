@@ -1,0 +1,33 @@
+/*---------------------------------------*\
+  Tabinated (.tabinated)
+\*---------------------------------------*/
+.tabinated{
+  margin: 10px 0;
+  &__needles{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      &:not(:first-child) a{
+        margin-left: -5px;
+      }
+      &:not(.is-tab-active) a{
+        box-shadow: 2px -2px 2px rgba($black, .08) inset;
+      }
+    }
+    a{
+      display: block;
+      padding: 10px 20px;
+      background: lighten(mix($white, yellow), 22%);
+      color: #555;
+      &:hover, &:active, &:focus{
+        text-decoration: none;
+      }
+    }
+  }
+  &__haystack{
+    padding: 10px 20px;
+    background: $white;
+  }
+}

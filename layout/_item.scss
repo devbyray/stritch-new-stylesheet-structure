@@ -1,0 +1,15 @@
+/*---------------------------------------*\
+  Item (.item)
+\*---------------------------------------*/
+.item{
+  &__info{
+    padding: 10px 5px;
+    background: rgba($white, .8);
+  }
+  &__title, &__details, &__price{
+    margin: 5px 0;
+  }
+  &__details, &__price{
+    font-size: 1.2rem;
+  }
+}

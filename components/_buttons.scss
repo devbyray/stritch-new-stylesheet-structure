@@ -1,0 +1,138 @@
+/*---------------------------------*\
+  Buttons (.button)
+  - Modifiers
+    * button--default
+    * button--primary
+\*---------------------------------*/
+.button{
+  display: inline-block;
+  min-width: 100px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  text-align: center;
+  color: #f00;
+  &:hover, &:active, &:focus{
+    text-decoration: none;
+  }
+  &--default{
+    background: #ccc;
+    color: #888;
+    border: solid thin #999;
+    box-shadow: 1.8px 1.8px .5px #bbb inset;
+    &:hover{
+      background: darken(#ccc, 10%);
+    }
+  }
+  &--plain{
+    background: transparent;
+    color: inherit;
+    border: solid thin lighten($black, 10%);
+    &:hover{
+      background: rgba(darken($white, 10%), .5);
+    }
+  }
+  &--brand{
+    background: $color-brand-3;
+    color: $color-brand-5;
+    border: solid thin darken($color-brand-3, 8%);
+    &:hover{
+      background: darken($color-brand-3, 10%);
+    }
+  }
+  &--facebook{
+    background: $facebook;
+    color: $white;
+    border: solid thin darken($facebook, 8%);
+    &:hover{
+      background: darken($facebook, 4%);
+    }
+  }
+  &--twitter{
+    background: $twitter;
+    color: $white;
+    border: solid thin darken($twitter, 8%);
+    &:hover{
+      background: darken($twitter, 4%);
+    }
+  }
+  &--facebook, &--twitter{
+    .icon{
+      margin-right: 5px;
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+  &--login{
+    background: rgba(#aaa, .8);
+    color: rgba($white, .8);
+    border: 0;
+    &:hover{
+      background: rgba(#aaa, .7);
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+  &--control{
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background: #ddd;
+    color: #555 !important;
+    border: solid thin #aaa;
+    box-shadow: 0 0 1px #bbb;
+    &__has-icon{
+      position: relative;
+      padding-left: 40px;
+    }
+    @include breakpoint(378px){
+      margin-bottom: 0;
+    }
+    @include breakpoint($breakpoint-tablet-portrait){
+      margin-right: 0;
+      margin-left: 5px;
+    }
+    @include breakpoint($breakpoint-tablet-landscape){
+      margin-left: 10px;
+    }
+    &:hover{
+      box-shadow: 0 1px 3px #bbb;
+      text-decoration: none;
+    }
+    &:active, &:focus{
+      text-decoration: none;
+      outline: none;
+    }
+  }
+  &--panel{
+    background: $theme-default-color;
+    color: $white;
+    border: solid thin $theme-default-color;
+    &:hover{
+      background: darken($theme-default-color, 5%);
+    }
+  }
+  &--large{
+    padding: 14px 40px;
+  }
+  &--flat{
+    border-radius: 0;
+  }
+  &--compact{
+    width: 200px;
+  }
+  &--wide{
+    width: 100%;
+  }
+  &__icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 100%;
+    padding: 6px 5px;
+    background: darken($white, 5%);
+    text-align: center;
+  }
+}

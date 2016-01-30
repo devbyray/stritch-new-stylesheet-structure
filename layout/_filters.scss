@@ -1,0 +1,27 @@
+/*---------------------------------------*\
+  Filters (.filters, .filter)
+\*---------------------------------------*/
+.filters{
+  padding: 5px 10px;
+  background: rgba($white, .7);
+  border: solid thin $white;
+  color: #777;
+  @include breakpoint($breakpoint-max){
+    margin-top: 6px;
+    width: 25%;
+    float: left;
+  }
+}
+.filter{
+  &__heading{
+    margin: 5px 0;
+  }
+  &__list{
+    list-style-type: none;
+    margin: 8px 0;
+    padding: 0 0 0 5px;
+    a{
+      color: inherit;
+    }
+  }
+}

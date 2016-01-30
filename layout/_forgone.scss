@@ -1,0 +1,17 @@
+.forgone{
+  position: absolute;
+  right: 5px;
+  top: 40px;
+  z-index: 10;
+  background: $white;
+  border: solid thin #ccc;
+  border-radius: 2px;
+  a{
+    display: block;
+    padding: 10px 20px;
+    &:hover{
+      text-decoration: none;
+      background: #ddd;
+    }
+  }
+}

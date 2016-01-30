@@ -1,0 +1,32 @@
+/*---------------------------------------*\
+ Pagination
+\*---------------------------------------*/
+.pagination.pagination{
+  list-style-type: none;
+  padding: 0;
+  > li{
+    display: inline-block;
+    background: #bbb;
+    &.disabled a{
+      color: #999;
+    }
+    &:hover{
+      @include gradient-light-linear;
+    }
+    &:first-of-type{
+      border-radius: 5px 0 0 5px;
+    }
+    &:last-of-type{
+      border-radius: 0 5px 5px 0;
+    }
+    &:not(:last-of-type){
+      border-right: solid thin lighten(#aaa, 10%);
+    }
+    > a{
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: darken($white, 60%);
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/*-----------------------------------------*\
+  Dashboard (.dashboard)
+\*-----------------------------------------*/
+.dashboard{
+  margin-top: 20px;
+  &__widget{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    &:hover{
+      box-shadow: 0 0 4px lighten($black, 60%);
+    }
+    &__topview{
+      height: 200px;
+      background: $white;
+    }
+    &__stat{
+      height: 100px;
+      background: rgba($white, .6);
+      box-shadow: 0 1px 2px darken($white, 15%) inset;
+      text-align: center;
+      .grid-4{
+        padding: 10px;
+      }
+      strong{
+        display: block;
+        font-size: 3rem;
+        font-weight: lighter;
+      }
+      small{
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: lighten($black, 70%);
+      }
+    }
+    &--add{
+      padding: 100px 20px;
+      background: rgba($white, .4);
+      color: rgba($black, .4);
+      text-align: center;
+      cursor: pointer;
+      .icon{
+        width: 5em;
+        height: 5em;
+      }
+    }
+  }
+}

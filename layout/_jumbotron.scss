@@ -1,0 +1,11 @@
+/*---------------------------------------*\
+  Jumbotron (.jumbotron)
+\*---------------------------------------*/
+.jumbotron{
+  position: relative;
+  height: 300px;
+  margin: 5px 0;
+  background: image-url('bedroom.jpg');
+  background-position: center;
+  background-size: cover;
+}

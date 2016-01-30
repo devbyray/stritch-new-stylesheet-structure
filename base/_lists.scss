@@ -1,0 +1,30 @@
+/*---------------------------------------*\
+ List
+\*---------------------------------------*/
+.list{
+  list-style-type: none;
+  max-height: 300px;
+  margin: 0;
+  padding: 0;
+  background: $white;
+  border: solid thin #ccc;
+  border-top: solid 8px #ccc;
+  border-bottom: solid 8px #ccc;
+  border-radius: 5px;
+  &__item{
+    padding: 5px 10px;
+    &:not(:last-child){
+      border-bottom: solid thin #ccc;
+    }
+  }
+  &__control{
+    padding: 5px 10px;
+    background: #ddd;
+    h4{
+      margin: 5px 0;
+    }
+  }
+  &__subscroll{
+    max-height: calc(300px - 90px);
+  }
+}

@@ -1,0 +1,13 @@
+/*---------------------------------------*\
+  Hearts (.hearts)
+\*---------------------------------------*/
+.hearts{
+  float: right;
+  padding: 5px;
+  .icon {
+    width: 2em;
+    height: 2em;
+    fill: $dribbble;
+    cursor: pointer;
+  }
+}

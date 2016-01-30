@@ -1,0 +1,36 @@
+/*------------------------------------*\
+  Footer (.footer)
+  - Child Elements
+    * footer__heading
+    * footer__list
+\*------------------------------------*/
+.footer{
+  padding: 10px;
+  background: darken($color-brand-2, 30%);
+  font-size: 1.2rem;
+  color: #eee;
+  &__heading{
+    margin: 10px 0;
+    color: $color-brand-3;
+  }
+  &__list{
+    list-style-type: none;
+    padding: 0;
+    li{ margin: 5px 0; }
+    a{ color: $white; }
+  }
+  > .column{
+    padding: 10px;
+  }
+  p{
+    margin: 5px 0;
+  }
+  address{
+    display: inline;
+    font-style: normal;
+    color: #ddd;
+  }
+  a{
+    color: #aaa;
+  }
+}

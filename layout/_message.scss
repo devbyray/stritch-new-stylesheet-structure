@@ -1,0 +1,10 @@
+*------------------------------------*\
+  Message
+\*------------------------------------*/
+.message{
+  &--bottom-offset{
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+  }
+}

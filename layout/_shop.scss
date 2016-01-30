@@ -1,0 +1,25 @@
+/*---------------------------------------*\
+  Shop (.shop)
+\*---------------------------------------*/
+.shop{
+  position: relative;
+  @include row();
+  &__item{
+    @include breakpoint($breakpoint-tablet-portrait){
+      @include column((100 / 3) - .4%);
+      padding: 0;
+    }
+    margin: 0.19%;
+  }
+  &__image{
+    width: 100%;
+  }
+  &--sidebared{
+    margin: 5px 0;
+    @include breakpoint($breakpoint-max){
+      float: left;
+      width: 74%;
+      margin: 5px 0 0 1%;
+    }
+  }
+}

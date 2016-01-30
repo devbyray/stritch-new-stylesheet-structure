@@ -1,0 +1,14 @@
+/*---------------------------------------*\
+  Sidebar (.sidebar)
+\*---------------------------------------*/
+.sidebar{
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  background: $white;
+  border: solid thin #bbb;
+  &__title{
+    margin: 0;
+    padding: 5px;
+    border-bottom: solid thin #888;
+  }
+}

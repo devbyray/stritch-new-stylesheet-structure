@@ -1,0 +1,41 @@
+/*-----------------------------------------*\
+  Authbox (Custom for admin authentication)
+\*-----------------------------------------*/
+.authbox{
+  width: 90%;
+  max-width: 300px;
+  margin: 100px auto;
+  color: #444;
+  &__avatar{
+    width: 6em;
+    height: 6em;
+    margin: 10px auto;
+    padding: 10px;
+    border: solid 2px #aaa;
+    border-radius: 50%;
+    text-align: center;
+    .icon{
+      width: 4em;
+      height: 4em;
+      fill: #aaa;
+    }
+  }
+  &__set{
+    margin: 20px 0;
+    padding: 20px 20px 50px;
+    background: rgba($white, .5);
+    box-shadow: 0 0 2px #aaa;
+    .form__input{
+      height: 40px;
+      background: rgba($white, .05);
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  &__name{
+    text-align: center;
+    color: rgba($black, .5);
+  }
+  a{ color: $theme-default-color; }
+}

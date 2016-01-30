@@ -1,0 +1,57 @@
+/*------------------------------------*\
+  Carousel
+\*------------------------------------*/
+.carousel{
+  position: relative;
+  padding: 0 30px;
+  @include breakpoint($breakpoint-tablet-portrait){
+    padding: 0 25px;
+  }
+  &__image{
+    position: relative;
+    padding: 0 5px;
+    width: 100%;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__caption{
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    &--light{
+      background: $white;
+    }
+    &--dark{
+      background: rgba($black, .8);
+      color: rgba($white, .7);
+    }
+  }
+}
+.slick{
+  &-dots{
+    padding-bottom: 10px;
+    left: 0;
+  }
+  &-prev, &-next{
+    z-index: 9999;
+    &::before{
+      font-size: 2.8rem;
+      color: $color-brand-3;
+    }
+  }
+  &-prev{
+    left: 5px;
+    @include breakpoint($breakpoint-tablet-portrait){
+      left: 0;
+    }
+  }
+  &-next{
+    right: 15px;
+    @include breakpoint($breakpoint-tablet-portrait){
+      right: 8px;
+    }
+  }
+}

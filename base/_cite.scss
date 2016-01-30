@@ -1,0 +1,7 @@
+cite{
+  display: block;
+  font-weight: 300;
+  &::before{
+    content: '— ';
+  }
+}

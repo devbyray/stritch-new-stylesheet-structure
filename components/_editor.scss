@@ -1,0 +1,12 @@
+/*---------------------------------------*\
+  Editor (.editor)
+   - Requirement (Quill)
+\*---------------------------------------*/
+.editor{
+  background: $white;
+  min-height: 200px;
+  box-shadow: 0 2px 3px darken($white, 40%);
+  &__controls{
+    border-bottom: solid thin #ccc;
+  }
+}

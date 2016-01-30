@@ -1,0 +1,21 @@
+%input-labels{
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  padding: 5px;
+  border: 0;
+  background: darken($white, 5%);
+  text-align: center;
+  box-shadow: 0 0 2px lighten($black, 50%);
+}
+.pre-input{
+  @extend %input-labels;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+}
+.post-input{
+  @extend %input-labels;
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}

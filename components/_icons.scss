@@ -1,0 +1,22 @@
+/*---------------------------------*\
+  Icon (.icon)
+  - Child Elements
+    * icon-search
+    * icon-2x
+\*---------------------------------*/
+.icon{
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  &-search{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+  }
+  &-2x{
+    width: 2em;
+    height: 2em;
+  }
+}

@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  Testimonies
+\*------------------------------------*/
+.testimonies{
+  height: 250px;
+  margin: 5px 0;
+  padding: 10px;
+  background: $white;
+  text-align: center;
+  &__avatar{
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px #222;
+  }
+}

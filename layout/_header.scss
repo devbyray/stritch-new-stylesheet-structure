@@ -1,0 +1,71 @@
+/*---------------------------------*\
+  Header (.header)
+  - Child Elements
+    * header__cap
+    * header__navigation
+    * header__contact
+    * header__connect
+    * header__intro
+    * header__aside
+    - States
+      * is-headernav-active
+\*---------------------------------*/
+.header{
+  background: $white;
+  &__cap{
+    background: darken($white, 5%);
+    a{ color: #777; }
+  }
+  &__navigation{
+    width: 100%;
+    background: $color-brand-6;
+    display: flex;
+    flex-flow: row wrap;
+    a{
+      width: 122px;
+      @include breakpoint($breakpoint-max + 25px){
+        width: (100 / 8) + 0%;
+      }
+      padding: 10px;
+      background-image: linear-gradient(to right, darken($white, 5%) 80%, darken($white, 8%));
+      color: $color-brand-1;
+      font-size: 1.2rem;
+      text-align: center;
+      &:hover, &:focus, &:active{
+        text-decoration: none;
+        background: darken($white, 10%);
+      }
+    }
+  }
+  &__contact, &__connect{
+    padding: 0 10px;
+    font-size: 1.2rem;
+  }
+  &__contact{
+    float: left;
+  }
+  &__connect{
+    float: right;
+    margin: 8px 0;
+    padding: 0 20px;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  &__intro{
+    padding: 20px 40px;
+  }
+  &__aside{
+    padding: 50px 20px;
+    text-align: right;
+    .icon-shopping-bag{
+      margin-left: 10px;
+    }
+  }
+  &__logo{
+    width: 200px;
+    margin: 15px 0 0;
+  }
+  &__cart{
+    position: relative;
+  }
+}

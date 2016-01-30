@@ -1,0 +1,13 @@
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Enriqueta', serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background-color: $color-brand-6;
+  color: #222;
+  .admin &{
+    font-family: 'Roboto', sans-serif;
+  }
+}

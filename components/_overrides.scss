@@ -1,0 +1,49 @@
+// Overrides
+// Rules to overrides plugin styles and use assets pipeline
+// images over plugin dir images that may cause 404 on
+// deployment environments
+.sy-controls li a:after{
+  background: image-url("arrows.svg");
+}
+.irs-bar{
+  background: $theme-default-color;
+}
+.irs-bar-edge.irs-bar-edge.irs-bar-edge{
+  background: $theme-default-color;
+  border-radius: 5px 0 0 5px;
+}
+.irs-slider.irs-slider{
+  width: 5px;
+  background: lighten($theme-default-color, 10%);
+}
+.irs-single.irs-single{
+  background: lighten($theme-default-color, 10%);
+  &::after{
+    border-top-color: lighten($theme-default-color, 10%);
+  }
+}
+.qq-uploader.qq-uploader{
+  min-height: 300px;
+  max-height: 300px;
+  background: #DEDEDE;
+  border: dashed thin #aaa;
+}
+.qq-upload-list{
+  max-height: 200px;
+  li{
+    background: #D6D6D6;
+    border-top: solid thin #aaa;
+  }
+}
+.qq-retry-icon{
+  visibility: hidden;
+}
+.qq-upload-spinner.qq-upload-spinner{
+  background: image-url("loading.gif");
+}
+.qq-drop-processing-spinner.qq-drop-processing-spinner{
+  background: image-url("processing.gif");
+}
+.qq-edit-filename-icon.qq-edit-filename-icon{
+  background: image-url("edit.gif");
+}

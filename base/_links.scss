@@ -1,0 +1,8 @@
+a{
+  color: $color-brand-3;
+  text-decoration: none;
+  &:hover, &:focus, &:active{
+    $color: mix($color-brand-2, $color-brand-3, 50%);
+    text-decoration: underline;
+  }
+}
